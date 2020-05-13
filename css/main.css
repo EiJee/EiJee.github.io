@@ -279,6 +279,7 @@ img:hover{
   margin-top: 10px;
   color: #fff;
   font-family: Impact;
+  transition: 0.5s;
 
 }
 span1:hover{
