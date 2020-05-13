@@ -159,35 +159,40 @@ header.fixed #logo {
 }
 
 #top h1 {
-  padding-top: 20%;
-  animation: text 1.5s 1;
-}
+  padding-top: 10%;
+  padding-right: 50%;
+  animation: show 0.3s 1;
+  animation-fill-mode: forwards;
+  color: green;
+ }
 
 #top h3 {
+  padding-right: 50%;
   color: #fff;
-  animation: text 1.5s 1;
+  animation: show 2s 1;
+  animation-fill-mode: forwards;
+  color: darkorange;
 
 }
-@keyframes text {
+
+@keyframes show {
   0%{
-    color: #fff;
-    margin-bottom: -40px
-  }
-  30%{
-    letter-spacing: 25px;
-    margin-bottom: -40px;
+opacity:0;
+}
+100% {
+opacity:1;
+}
   }
 
-}
 
 /* Блок с описанием */
 
 #main {
   float: left;
   background-color: #fff;
-  border-top: 2px solid silver;
+  border-top: 3px silver;
   color: #484848;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 @media (min-width: 1401px) {
@@ -227,7 +232,7 @@ header.fixed #logo {
   background-image: url(https://statelywallpaper.com/wp-content/uploads/2018/02/World-Of-Warcraft-Battle-For-Azeroth-1280x1280.jpg);
 
   background-blend-mode: multiply;
-  background-color: #fff;
+  background-color: grey;
   background-size: cover;
   background-attachment: fixed;
 
